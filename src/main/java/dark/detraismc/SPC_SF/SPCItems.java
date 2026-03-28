@@ -359,6 +359,7 @@ public final class SPCItems {
 
 
    public static final SlimefunItemStack ARTIFICIAL_CROPS_SWEET_BERRIES;
+    public static final SlimefunItemStack ARTIFICIAL_CROPS_GLOW_BERRIES;
    public static final SlimefunItemStack ARTIFICIAL_CROPS_KELP;
    public static final SlimefunItemStack ARTIFICIAL_CROPS_BAMBOO;
    public static final SlimefunItemStack ARTIFICIAL_CROPS_SUGAR_CANE;
@@ -368,6 +369,7 @@ public final class SPCItems {
    public static final SlimefunItemStack ARTIFICIAL_CROPS_COCOA_BEANS;
 
    public static final SlimefunItemStack ARTIFICIAL_CROPS_SWEET_BERRIES_2;
+    public static final SlimefunItemStack ARTIFICIAL_CROPS_GLOW_BERRIES_2;
    public static final SlimefunItemStack ARTIFICIAL_CROPS_KELP_2;
    public static final SlimefunItemStack ARTIFICIAL_CROPS_BAMBOO_2;
    public static final SlimefunItemStack ARTIFICIAL_CROPS_SUGAR_CANE_2;
@@ -555,6 +557,12 @@ public final class SPCItems {
    public static final SlimefunItemStack HEALING_TICKET;
    public static final SlimefunItemStack HEALING_CORE;
    public static final SlimefunItemStack HEALING_FRUIT;
+
+    public static final SlimefunItemStack ORE_POLISHER;
+    public static final SlimefunItemStack TURTLE_SCUTE_PRINTER;
+    public static final SlimefunItemStack EGG_PRINTER;
+    public static final SlimefunItemStack EGG_PRINTER_2;
+    public static final SlimefunItemStack MILK_STERILIZER;
 
 
    static {
@@ -1268,6 +1276,8 @@ public final class SPCItems {
 
       ARTIFICIAL_CROPS_SWEET_BERRIES = new SlimefunItemStack("ARTIFICIAL_CROPS_SWEET_BERRIES", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWExZmJlZjNkMGM1MWFkNmM3MTNhYTIwYzQyZGIxODM0MzRjZWM0ZmI2M2E1YTNlYWExMDFhZDNjNWY3NWQxNSJ9fX0="
     		  , "&aArtificial Crops &e[Sweet Berries]", "", LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE), LoreBuilder.speed(1), LoreBuilder.powerBuffer(256), LoreBuilder.powerPerSecond(50));
+       ARTIFICIAL_CROPS_GLOW_BERRIES = new SlimefunItemStack("ARTIFICIAL_CROPS_GLOW_BERRIES", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWExZmJlZjNkMGM1MWFkNmM3MTNhYTIwYzQyZGIxODM0MzRjZWM0ZmI2M2E1YTNlYWExMDFhZDNjNWY3NWQxNSJ9fX0="
+               , "&aArtificial Crops &e[Glow Berries]", "", LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE), LoreBuilder.speed(1), LoreBuilder.powerBuffer(256), LoreBuilder.powerPerSecond(50));
       ARTIFICIAL_CROPS_KELP = new SlimefunItemStack("ARTIFICIAL_CROPS_KELP", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWExZmJlZjNkMGM1MWFkNmM3MTNhYTIwYzQyZGIxODM0MzRjZWM0ZmI2M2E1YTNlYWExMDFhZDNjNWY3NWQxNSJ9fX0="
     		  , "&aArtificial Crops &e[Kelp]", "", LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE), LoreBuilder.speed(1), LoreBuilder.powerBuffer(256), LoreBuilder.powerPerSecond(50));
       ARTIFICIAL_CROPS_BAMBOO = new SlimefunItemStack("ARTIFICIAL_CROPS_BAMBOO", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWExZmJlZjNkMGM1MWFkNmM3MTNhYTIwYzQyZGIxODM0MzRjZWM0ZmI2M2E1YTNlYWExMDFhZDNjNWY3NWQxNSJ9fX0="
@@ -1285,7 +1295,9 @@ public final class SPCItems {
 
       ARTIFICIAL_CROPS_SWEET_BERRIES_2 = new SlimefunItemStack("ARTIFICIAL_CROPS_SWEET_BERRIES_2", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWExZmJlZjNkMGM1MWFkNmM3MTNhYTIwYzQyZGIxODM0MzRjZWM0ZmI2M2E1YTNlYWExMDFhZDNjNWY3NWQxNSJ9fX0="
     		  , "&aArtificial Crops &e[Sweet Berries] &7- &eII", "", LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE), LoreBuilder.speed(3), LoreBuilder.powerBuffer(256), LoreBuilder.powerPerSecond(50));
-      ARTIFICIAL_CROPS_KELP_2 = new SlimefunItemStack("ARTIFICIAL_CROPS_KELP_2", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWExZmJlZjNkMGM1MWFkNmM3MTNhYTIwYzQyZGIxODM0MzRjZWM0ZmI2M2E1YTNlYWExMDFhZDNjNWY3NWQxNSJ9fX0="
+       ARTIFICIAL_CROPS_GLOW_BERRIES_2 = new SlimefunItemStack("ARTIFICIAL_CROPS_GLOW_BERRIES_2", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWExZmJlZjNkMGM1MWFkNmM3MTNhYTIwYzQyZGIxODM0MzRjZWM0ZmI2M2E1YTNlYWExMDFhZDNjNWY3NWQxNSJ9fX0="
+               , "&aArtificial Crops &e[Glow Berries] &7- &eII", "", LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE), LoreBuilder.speed(3), LoreBuilder.powerBuffer(256), LoreBuilder.powerPerSecond(50));
+       ARTIFICIAL_CROPS_KELP_2 = new SlimefunItemStack("ARTIFICIAL_CROPS_KELP_2", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWExZmJlZjNkMGM1MWFkNmM3MTNhYTIwYzQyZGIxODM0MzRjZWM0ZmI2M2E1YTNlYWExMDFhZDNjNWY3NWQxNSJ9fX0="
     		  , "&aArtificial Crops &e[Kelp] &7- &eII", "", LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE), LoreBuilder.speed(3), LoreBuilder.powerBuffer(256), LoreBuilder.powerPerSecond(50));
       ARTIFICIAL_CROPS_BAMBOO_2 = new SlimefunItemStack("ARTIFICIAL_CROPS_BAMBOO_2", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWExZmJlZjNkMGM1MWFkNmM3MTNhYTIwYzQyZGIxODM0MzRjZWM0ZmI2M2E1YTNlYWExMDFhZDNjNWY3NWQxNSJ9fX0="
     		  , "&aArtificial Crops &e[Bamboo] &7- &eII", "", LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE), LoreBuilder.speed(3), LoreBuilder.powerBuffer(256), LoreBuilder.powerPerSecond(50));
@@ -1574,13 +1586,13 @@ public final class SPCItems {
     		  , "&aArtificial Crops &e[Tobacco] &7- &eII", "", LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE), LoreBuilder.speed(3), LoreBuilder.powerBuffer(256), LoreBuilder.powerPerSecond(60));
 
 
-      AUTO_ANCIENT_ALTAR = new SlimefunItemStack("AUTO_ANCIENT_ALTAR", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODE4ZjgzZWI2NGY0MzhlM2Y2YWUzYTVjMmRlYThlZDEwMzAzYmFkODVhYzM0YTc5ODY1OWEyNzVhYTA5NjUwNiJ9fX0=", "&2Auto-Crafter &8(Ancient Altar)", new String[]{""
+      AUTO_ANCIENT_ALTAR = new SlimefunItemStack("SPC_AUTO_ANCIENT_ALTAR", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODE4ZjgzZWI2NGY0MzhlM2Y2YWUzYTVjMmRlYThlZDEwMzAzYmFkODVhYzM0YTc5ODY1OWEyNzVhYTA5NjUwNiJ9fX0=", "&2Auto-Crafter &8(Ancient Altar)", new String[]{""
     		  , "&fPlace this machine on top of a", "&fchest or similar and make it craft", "&fanything that can be crafted using an", "&eAncient Altar", "", LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE), LoreBuilder.powerPerSecond(128).replace("/s", "/Item")});
       ADVANCED_ANCIENT_PEDESTAL = new SlimefunItemStack("ADVANCED_ANCIENT_PEDESTAL", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODViNzFkYmQ5YjMxYzk0MjZhOTlkMjdkNjFkZDA4ZTMwYjljMDMwN2VlM2ZkZWQzNDI1NDk5MjU2MmQxYjg2NSJ9fX0=", "&eAdvanced &dAncient Pedestal", new String[0]);
       MAGNESIUM_ARTIFICIAL_SEEDS = new SlimefunItemStack("MAGNESIUM_ARTIFICIAL_SEEDS", Material.PUMPKIN_SEEDS, "&7Magnesium Artificial Seeds", new String[0]);
       ZINC_ARTIFICIAL_SEEDS = new SlimefunItemStack("ZINC_ARTIFICIAL_SEEDS", Material.PUMPKIN_SEEDS, "&7Zinc Artificial Seeds", new String[0]);
 
-      AUTO_MAGIC_WORKBENCH = new SlimefunItemStack("AUTO_MAGIC_WORKBENCH", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTJiM2Q1YTZmZWMxZTNhNWYxYzhmM2YzYzk2ZjM4YzY3NDdjMjA5ZDZhMTA2Yzc5YjY1YTNhOWE5Y2ZkOTc3In19fQ==", "&2Auto-Crafter &8(Magic Workbench)", new String[]{""
+      AUTO_MAGIC_WORKBENCH = new SlimefunItemStack("SPC_AUTO_MAGIC_WORKBENCH", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTJiM2Q1YTZmZWMxZTNhNWYxYzhmM2YzYzk2ZjM4YzY3NDdjMjA5ZDZhMTA2Yzc5YjY1YTNhOWE5Y2ZkOTc3In19fQ==", "&2Auto-Crafter &8(Magic Workbench)", new String[]{""
     		  , "&fPlace this machine on top of a", "&fchest or similar and make it craft", "&fanything that can be crafted using an", "&eMagic Workbench", "", LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE), LoreBuilder.powerPerSecond(64).replace("/s", "/Item")});
 
       ELECTRIFIED_NETHER_COMPOSTER = new SlimefunItemStack("ELECTRIFIED_NETHER_COMPOSTER", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGIyZGI4ZjBjMmE1ZDA0MjQ2NDM3YTlkYTcxZDU5NzNlMmNiZmQyMmY2MDUxMGE5MzlmYTRmNzY2NGE0MWQ2NiJ9fX0="
@@ -1642,7 +1654,20 @@ public final class SPCItems {
       HEALING_FRUIT = new SlimefunItemStack("HEALING_FRUIT", Material.GOLDEN_APPLE, "&cHealing &aFruit", new String[]{"", "&7&ohelth"});
       setupEnchanted(HEALING_FRUIT);
 
+       ORE_POLISHER = new SlimefunItemStack("ORE_POLISHER", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzA2N2Y1YmZjZGIwMmFiNDIwNmY3ZTlkMWYyNmM4NTZiM2JmNjlmYzkzZjgyZmZlZTdjZDQxNzZkNjUzYmY4MSJ9fX0="
+               , "&bOre Polisher", new String[]{"", "&fMengubah deepslate ore menjadi ore biasa", "", LoreBuilder.machine(MachineTier.ADVANCED, MachineType.MACHINE), LoreBuilder.speed(1.0F), LoreBuilder.powerPerSecond(64)});
 
+       TURTLE_SCUTE_PRINTER = new SlimefunItemStack("TURTLE_SCUTE_PRINTER", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWQxYmQwNmE2NzM4ZDBkYTUwNTNlYWU0OWExMzYyYjg5NDg5ZDFhYzAwNGMyMjI1MDQ1MzZmN2JjZDA3Njc5ZCJ9fX0="
+               , "&aScute Printer", new String[]{"", "&fMengubah seagrass menjadi scute", "", LoreBuilder.machine(MachineTier.ADVANCED, MachineType.MACHINE), LoreBuilder.speed(1.0F), LoreBuilder.powerPerSecond(40)});
+
+       EGG_PRINTER = new SlimefunItemStack("EGG_PRINTER", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzc3NzA3MzE3NzE0M2Y5NDc2ODQ0YTc4ZTJlZGFiZmIzYTg2ZjNmZTMxYWIxYzBmODhiZTdiM2Y3NjljYjk1ZSJ9fX0="
+               , "&aEgg Printer", new String[]{"", "&fMengubah seeds menjadi egg", "", LoreBuilder.machine(MachineTier.ADVANCED, MachineType.MACHINE), LoreBuilder.speed(1.0F), LoreBuilder.powerPerSecond(32)});
+
+       EGG_PRINTER_2 = new SlimefunItemStack("EGG_PRINTER_2", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzc3NzA3MzE3NzE0M2Y5NDc2ODQ0YTc4ZTJlZGFiZmIzYTg2ZjNmZTMxYWIxYzBmODhiZTdiM2Y3NjljYjk1ZSJ9fX0="
+               , "&aEgg Printer &7- &eII", new String[]{"", "&fMengubah seeds menjadi egg", "", LoreBuilder.machine(MachineTier.ADVANCED, MachineType.MACHINE), LoreBuilder.speed(4.0F), LoreBuilder.powerPerSecond(64)});
+
+       MILK_STERILIZER = new SlimefunItemStack("MILK_STERILIZER", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTc1YjU4NmQyOWFhNGY2MzAwNjcwN2ZiZTk0YTMzYzg5YzIyNWY0OWIzYjQ0Y2IxODE3Mzg2NTZjOTQyZTI3NyJ9fX0="
+               , "&fMilk Sterilizer", new String[]{"", "&fMerebus susu menjadi fresh milk", "", LoreBuilder.machine(MachineTier.ADVANCED, MachineType.MACHINE), LoreBuilder.speed(1.0F), LoreBuilder.powerPerSecond(40)});
 
    }
 
