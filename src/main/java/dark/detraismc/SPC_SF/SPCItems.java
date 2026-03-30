@@ -642,9 +642,9 @@ public final class SPCItems {
       INDONESIAN_INGREDIENT_LOOTBAG = new SlimefunItemStack("INDONESIAN_INGREDIENT_LOOTBAG", Material.LEATHER, "&aIndonesian Ingredient Loot Bag", new String[]{"", "&aRight Click to get random Indonesian", "&aingredient"});
       UNCHARGED_HEART_OF_THE_SEA = new SlimefunItemStack("UNCHARGED_HEART_OF_THE_SEA", Material.HEART_OF_THE_SEA, "&fUncharged Heart Of The Sea", new String[]{"", "&aRight Click to charge"});
       VENDING_MACHINE = new SlimefunItemStack("VENDING_MACHINE", Material.GLASS_BOTTLE, "&bVending Machine", new String[]{"", "&7&oMenjual minuman segar"});
-      ELITE_GENERATOR = new SlimefunItemStack("ELITE_GENERATOR", "6b9a4dfcc7153c3176dc8cf38887d2d8385545fa4c5f8c2ff13f9d69e98e9", "&bElite Generator", new String[]{"", "&7&oGenerator untuk para kaum elit", "", LoreBuilder.machine(MachineTier.ADVANCED, MachineType.GENERATOR), LoreBuilder.powerBuffer(1024), LoreBuilder.powerPerSecond(64)});
-      ELITE_GENERATOR_2 = new SlimefunItemStack("ELITE_GENERATOR_2", "6b9a4dfcc7153c3176dc8cf38887d2d8385545fa4c5f8c2ff13f9d69e98e9", "&bElite Generator &7- &eII", new String[]{"", "&7&oGenerator untuk para kaum elit", "", LoreBuilder.machine(MachineTier.END_GAME, MachineType.GENERATOR), LoreBuilder.powerBuffer(2048), LoreBuilder.powerPerSecond(128)});
-      ELITE_GENERATOR_3 = new SlimefunItemStack("ELITE_GENERATOR_3", "6b9a4dfcc7153c3176dc8cf38887d2d8385545fa4c5f8c2ff13f9d69e98e9", "&bElite Generator &7- &eIII", new String[]{"", "&7&oGenerator untuk para kaum elit", "", LoreBuilder.machine(MachineTier.END_GAME, MachineType.GENERATOR), LoreBuilder.powerBuffer(3072), LoreBuilder.powerPerSecond(192)});
+      ELITE_GENERATOR = new SlimefunItemStack("ELITE_GENERATOR", "6b9a4dfcc7153c3176dc8cf38887d2d8385545fa4c5f8c2ff13f9d69e98e9", "&bElite Generator", new String[]{"", "&7&oGenerator untuk para kaum elit", "", LoreBuilder.machine(MachineTier.ADVANCED, MachineType.GENERATOR), LoreBuilder.powerBuffer(1000), LoreBuilder.powerPerSecond(100)});
+      ELITE_GENERATOR_2 = new SlimefunItemStack("ELITE_GENERATOR_2", "6b9a4dfcc7153c3176dc8cf38887d2d8385545fa4c5f8c2ff13f9d69e98e9", "&bElite Generator &7- &eII", new String[]{"", "&7&oGenerator untuk para kaum elit", "", LoreBuilder.machine(MachineTier.END_GAME, MachineType.GENERATOR), LoreBuilder.powerBuffer(2500), LoreBuilder.powerPerSecond(250)});
+      ELITE_GENERATOR_3 = new SlimefunItemStack("ELITE_GENERATOR_3", "6b9a4dfcc7153c3176dc8cf38887d2d8385545fa4c5f8c2ff13f9d69e98e9", "&bElite Generator &7- &eIII", new String[]{"", "&7&oGenerator untuk para kaum elit", "", LoreBuilder.machine(MachineTier.END_GAME, MachineType.GENERATOR), LoreBuilder.powerBuffer(5300), LoreBuilder.powerPerSecond(530)});
       ELITE_COIN = new SlimefunItemStack("ELITE_COIN", Material.GOLD_NUGGET, "&bElite Coin", new String[]{"", "&7&oCoin drop dari elite mobs"});
       ELITE_INGOT = new SlimefunItemStack("ELITE_INGOT", Material.GOLD_INGOT, "&bElite Ingot", new String[]{"", "&7&oBahan bakar untuk para kaum elit"});
       REINFORCED_LEATHER = new SlimefunItemStack("REINFORCED_LEATHER", Material.BROWN_CARPET, "&eReinforced Leather", new String[0]);
@@ -1016,7 +1016,7 @@ public final class SPCItems {
                        " &2+12 Health"
                }
        );
-       setupOffhand(VOID_SHIELD, "void_obsidian_drill", 0D, 12.0D, 0.0D, true);
+       setupOffhand(VOID_SHIELD, "void_obsidian_drill", 12.0D, 0.0D, 0.0D, true);
 
 
 

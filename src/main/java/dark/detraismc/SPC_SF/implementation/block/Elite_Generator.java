@@ -21,12 +21,12 @@ public class Elite_Generator extends AGenerator {
 
     @Override
     public int getEnergyProduction() {
-        return 32;
+        return 50;
     }
 
     @Override
     public int getCapacity() {
-        return 128;
+        return 500;
     }
 
     @Override
