@@ -111,6 +111,11 @@ public class Corrupted_Table_2 extends AContainer implements RecipeDisplayItem {
 	        recipeList.add(SPCItems.CORRUPTED_ELITE_INGOT);
 	        recipeList.add(new SlimefunItemStack(SPCItems.CORRUPTED_ELITE_INGOT, 64));
 	        recipeList.add(SPCItems.CORRUPTED_ELITE_INGOT_2);
+
+           recipeList.add(new SlimefunItemStack(SlimefunItems.REACTOR_COOLANT_CELL, 64));
+           recipeList.add(SPCItems.CORRUPTED_REACTOR_COOLANT_CELL);
+           recipeList.add(new SlimefunItemStack(SPCItems.CORRUPTED_REACTOR_COOLANT_CELL, 64));
+           recipeList.add(SPCItems.CORRUPTED_REACTOR_COOLANT_CELL_2);
 	        
 	        recipeList.add(new ItemStack(Material.NETHER_STAR, 64));
 	        recipeList.add(SPCItems.CORRUPTED_NETHER_STAR);

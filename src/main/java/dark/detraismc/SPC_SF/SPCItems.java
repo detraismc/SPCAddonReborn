@@ -165,6 +165,7 @@ public final class SPCItems {
    public static final SlimefunItemStack CORRUPTED_NETHERITE_INGOT;
    public static final SlimefunItemStack CORRUPTED_ENDERITE_INGOT;
    public static final SlimefunItemStack CORRUPTED_ELITE_INGOT;
+    public static final SlimefunItemStack CORRUPTED_REACTOR_COOLANT_CELL;
 
    public static final SlimefunItemStack CORRUPTED_COAL_2;
    public static final SlimefunItemStack CORRUPTED_DIAMOND_2;
@@ -176,6 +177,7 @@ public final class SPCItems {
    public static final SlimefunItemStack CORRUPTED_NETHERITE_INGOT_2;
    public static final SlimefunItemStack CORRUPTED_ENDERITE_INGOT_2;
    public static final SlimefunItemStack CORRUPTED_ELITE_INGOT_2;
+    public static final SlimefunItemStack CORRUPTED_REACTOR_COOLANT_CELL_2;
 
    public static final SlimefunItemStack CORRUPTED_ROTTEN_FLESH;
    public static final SlimefunItemStack CORRUPTED_BONE;
@@ -564,6 +566,12 @@ public final class SPCItems {
     public static final SlimefunItemStack EGG_PRINTER_2;
     public static final SlimefunItemStack MILK_STERILIZER;
 
+    public static final SlimefunItemStack COMPACT_REACTOR;
+    public static final SlimefunItemStack ICE_KING_COOLANT_CELL;
+
+    public static final SlimefunItemStack DUST_EXTRACTOR;
+    public static final SlimefunItemStack URANIUM_EXTRACTOR;
+
 
    static {
 	  spcaddon_category = new NestedItemGroup(new NamespacedKey(SPCAddon.getInstance(), "spc_smp_category"), new CustomItemStack(PlayerHead.getItemStack(PlayerSkin.fromHashCode("fdd2cce04674c2c3d5a3a94ff219787a2b459de790a0c01ff29b96729072cd")), "&bSPC SMP Addon", new String[0]));
@@ -831,6 +839,11 @@ public final class SPCItems {
        setupEnchanted(CORRUPTED_NETHER_STAR);
        CORRUPTED_NETHER_STAR_2 = new SlimefunItemStack("CORRUPTED_NETHER_STAR_2", Material.NETHER_STAR, "&5Corrupted &bNether Star &7- &eII", "", "&c&oFeel the corruption");
        setupEnchanted(CORRUPTED_NETHER_STAR_2);
+
+       CORRUPTED_REACTOR_COOLANT_CELL = new SlimefunItemStack("CORRUPTED_REACTOR_COOLANT_CELL", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjU0OGRjNzUwZWNiMTQ2ZTVjM2E0YmI4OTBjYzYzY2UyYzhkZDI5YjcyNDJhYmE4ZjgxZjdmMWJhNjhlNGY2YyJ9fX0=", "&5Corrupted &bReactor Coolant Cell &7- &eI", "", "&c&oFeel the corruption");
+       setupEnchanted(CORRUPTED_REACTOR_COOLANT_CELL);
+       CORRUPTED_REACTOR_COOLANT_CELL_2 = new SlimefunItemStack("CORRUPTED_REACTOR_COOLANT_CELL_2", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjU0OGRjNzUwZWNiMTQ2ZTVjM2E0YmI4OTBjYzYzY2UyYzhkZDI5YjcyNDJhYmE4ZjgxZjdmMWJhNjhlNGY2YyJ9fX0=", "&5Corrupted &bReactor Coolant Cell &7- &eII", "", "&c&oFeel the corruption");
+       setupEnchanted(CORRUPTED_REACTOR_COOLANT_CELL_2);
 
 
        // Logic: Repeat this block for each log type (Oak, Birch, Spruce, Jungle, Acacia, Dark Oak, Crimson, Warped)
@@ -1655,7 +1668,7 @@ public final class SPCItems {
       setupEnchanted(HEALING_FRUIT);
 
        ORE_POLISHER = new SlimefunItemStack("ORE_POLISHER", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzA2N2Y1YmZjZGIwMmFiNDIwNmY3ZTlkMWYyNmM4NTZiM2JmNjlmYzkzZjgyZmZlZTdjZDQxNzZkNjUzYmY4MSJ9fX0="
-               , "&bOre Polisher", new String[]{"", "&fMengubah deepslate ore menjadi ore biasa", "", LoreBuilder.machine(MachineTier.ADVANCED, MachineType.MACHINE), LoreBuilder.speed(1.0F), LoreBuilder.powerPerSecond(64)});
+               , "&bOre Polisher", new String[]{"", "&fMengubah deepslate ore menjadi ore biasa", "", LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE), LoreBuilder.speed(1.0F), LoreBuilder.powerPerSecond(64)});
 
        TURTLE_SCUTE_PRINTER = new SlimefunItemStack("TURTLE_SCUTE_PRINTER", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWQxYmQwNmE2NzM4ZDBkYTUwNTNlYWU0OWExMzYyYjg5NDg5ZDFhYzAwNGMyMjI1MDQ1MzZmN2JjZDA3Njc5ZCJ9fX0="
                , "&aScute Printer", new String[]{"", "&fMengubah seagrass menjadi scute", "", LoreBuilder.machine(MachineTier.ADVANCED, MachineType.MACHINE), LoreBuilder.speed(1.0F), LoreBuilder.powerPerSecond(40)});
@@ -1668,6 +1681,16 @@ public final class SPCItems {
 
        MILK_STERILIZER = new SlimefunItemStack("MILK_STERILIZER", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTc1YjU4NmQyOWFhNGY2MzAwNjcwN2ZiZTk0YTMzYzg5YzIyNWY0OWIzYjQ0Y2IxODE3Mzg2NTZjOTQyZTI3NyJ9fX0="
                , "&fMilk Sterilizer", new String[]{"", "&fMerebus susu menjadi fresh milk", "", LoreBuilder.machine(MachineTier.ADVANCED, MachineType.MACHINE), LoreBuilder.speed(1.0F), LoreBuilder.powerPerSecond(40)});
+
+       COMPACT_REACTOR = new SlimefunItemStack("COMPACT_REACTOR", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTdlMTVkZTBkNGI1ZTIwZTZjNmQwMmMwNjQ2NWU4ZDg3ZTJiMGFiYjdmNGVkNThmYzZhNGJiNDllMDA4NmY1YyJ9fX0=", "&2Compact Reactor", new String[]{"", "&7&oNuklir tanpa khawatir meledak", "", LoreBuilder.machine(MachineTier.END_GAME, MachineType.GENERATOR), LoreBuilder.powerBuffer(16384), LoreBuilder.powerPerSecond(500)});
+
+       ICE_KING_COOLANT_CELL = new SlimefunItemStack("ICE_KING_COOLANT_CELL", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODJkYTY4YmJjOWJkNGNjYmM2ZGFjMzlkZmRlNWRiNWIwYmNhODM1ODIyNGI0ZGYzZmJmMGZiNmYzN2JmNzQ5OSJ9fX0=", "&6Ice King Coolant Cell", new String[]{"", "&b&oBrrrrrr"});
+
+       DUST_EXTRACTOR = new SlimefunItemStack("SPC_DUST_EXTRACTOR", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTQ0YzVjZTJlYjY0M2Y4NjcxYzY2N2U4ODAyYzkzMTdhZDhjYzZhZjY4MGQ0ZWY2NzFkOGMwYzYzMjc3OTAwYSJ9fX0="
+               , "&6Dust Extractor", new String[]{"", "&fMengubah cobblestone menjadi random dust", "", LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE), LoreBuilder.speed(1.0F), LoreBuilder.powerPerSecond(240)});
+
+       URANIUM_EXTRACTOR = new SlimefunItemStack("SPC_URANIUM_EXTRACTOR", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWIzMDg2OTRjNWIwMWU4MTVkNDk4NTM1ZjRjM2RiNTgyN2I0Y2M0NWYxMmEzMzcxN2FkMGNhOWZlMjQ1MDljMCJ9fX0="
+               , "&2Uranium Extractor", new String[]{"", "&fMengubah cobblestone menjadi uranium", "", LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE), LoreBuilder.speed(1.0F), LoreBuilder.powerPerSecond(180)});
 
    }
 
