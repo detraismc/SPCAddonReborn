@@ -116,6 +116,21 @@ public class Corrupted_Table_2 extends AContainer implements RecipeDisplayItem {
            recipeList.add(SPCItems.CORRUPTED_REACTOR_COOLANT_CELL);
            recipeList.add(new SlimefunItemStack(SPCItems.CORRUPTED_REACTOR_COOLANT_CELL, 64));
            recipeList.add(SPCItems.CORRUPTED_REACTOR_COOLANT_CELL_2);
+
+           recipeList.add(new SlimefunItemStack(SPCItems.NATURE_ARTIFACT, 64));
+           recipeList.add(SPCItems.CORRUPTED_NATURE_ARTIFACT);
+           recipeList.add(new SlimefunItemStack(SPCItems.CORRUPTED_NATURE_ARTIFACT, 64));
+           recipeList.add(SPCItems.CORRUPTED_NATURE_ARTIFACT_2);
+
+           recipeList.add(new SlimefunItemStack(SPCItems.TECH_ARTIFACT, 64));
+           recipeList.add(SPCItems.CORRUPTED_TECH_ARTIFACT);
+           recipeList.add(new SlimefunItemStack(SPCItems.CORRUPTED_TECH_ARTIFACT, 64));
+           recipeList.add(SPCItems.CORRUPTED_TECH_ARTIFACT_2);
+
+           recipeList.add(new SlimefunItemStack(SPCItems.ANCIENT_ARTIFACT, 64));
+           recipeList.add(SPCItems.CORRUPTED_ANCIENT_ARTIFACT);
+           recipeList.add(new SlimefunItemStack(SPCItems.CORRUPTED_ANCIENT_ARTIFACT, 64));
+           recipeList.add(SPCItems.CORRUPTED_ANCIENT_ARTIFACT_2);
 	        
 	        recipeList.add(new ItemStack(Material.NETHER_STAR, 64));
 	        recipeList.add(SPCItems.CORRUPTED_NETHER_STAR);

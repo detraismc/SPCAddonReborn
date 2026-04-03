@@ -36,7 +36,7 @@ public class Turtle_Scute_Printer extends AContainer implements RecipeDisplayIte
 	   
 	   @Override
 	    public int getEnergyConsumption() {
-	        return 20;
+	        return 120;
 	    }
 
 	    @Override

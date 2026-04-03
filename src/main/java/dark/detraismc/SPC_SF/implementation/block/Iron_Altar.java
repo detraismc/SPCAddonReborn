@@ -42,7 +42,7 @@ public class Iron_Altar extends AContainer implements RecipeDisplayItem {
 
 	    @Override
 	    public int getCapacity() {
-	        return 24000;
+	        return 6000;
 	    }
 
 	    @Override

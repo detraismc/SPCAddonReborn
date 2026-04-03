@@ -289,6 +289,12 @@ final class ItemSetup {
          (new Corrupted_Ender_Eye_2()).register(SPCAddon.getInstance());
           (new Corrupted_Reactor_Coolant_Cell()).register(SPCAddon.getInstance());
           (new Corrupted_Reactor_Coolant_Cell_2()).register(SPCAddon.getInstance());
+          (new Corrupted_Nature_Artifact()).register(SPCAddon.getInstance());
+          (new Corrupted_Nature_Artifact_2()).register(SPCAddon.getInstance());
+          (new Corrupted_Tech_Artifact()).register(SPCAddon.getInstance());
+          (new Corrupted_Tech_Artifact_2()).register(SPCAddon.getInstance());
+          (new Corrupted_Ancient_Artifact()).register(SPCAddon.getInstance());
+          (new Corrupted_Ancient_Artifact_2()).register(SPCAddon.getInstance());
          
          (new Corrupted_Oak_Log()).register(SPCAddon.getInstance());
          (new Corrupted_Oak_Log_2()).register(SPCAddon.getInstance());
@@ -655,6 +661,14 @@ final class ItemSetup {
 
           (new Dust_Extractor()).setProcessingSpeed(1).register(SPCAddon.getInstance());
           (new Uranium_Extractor()).setProcessingSpeed(1).register(SPCAddon.getInstance());
+
+          (new Artifact_Reactor()).register(SPCAddon.getInstance());
+
+          (new Void_Altar()).setProcessingSpeed(1).register(SPCAddon.getInstance());
+          (new Void_Altar_2()).setProcessingSpeed(3).register(SPCAddon.getInstance());
+
+          (new Fusion_Artifact()).register(SPCAddon.getInstance());
+          (new Elite_Artifact()).register(SPCAddon.getInstance());
          
       }
    }

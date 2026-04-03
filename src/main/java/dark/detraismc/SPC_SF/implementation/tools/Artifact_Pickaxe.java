@@ -39,7 +39,7 @@ public class Artifact_Pickaxe extends SimpleSlimefunItem<ToolUseHandler> {
 	            if (b.getType() == Material.END_STONE) {
 	            	if (!e.isCancelled()) {
 	            		drops.clear();
-	            		if (plugin.mtk.getChance(20, 100)) {
+	            		if (plugin.mtk.getChance(15, 100)) {
 	            			if (plugin.mtk.getChance(30, 100)) {
 	            				Skeleton mob = (Skeleton) e.getPlayer().getLocation().getWorld().spawn(e.getPlayer().getLocation(), Skeleton.class);
 	        					mob.setMaxHealth(1000);

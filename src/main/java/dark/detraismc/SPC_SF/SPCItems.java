@@ -166,6 +166,9 @@ public final class SPCItems {
    public static final SlimefunItemStack CORRUPTED_ENDERITE_INGOT;
    public static final SlimefunItemStack CORRUPTED_ELITE_INGOT;
     public static final SlimefunItemStack CORRUPTED_REACTOR_COOLANT_CELL;
+    public static final SlimefunItemStack CORRUPTED_NATURE_ARTIFACT;
+    public static final SlimefunItemStack CORRUPTED_TECH_ARTIFACT;
+    public static final SlimefunItemStack CORRUPTED_ANCIENT_ARTIFACT;
 
    public static final SlimefunItemStack CORRUPTED_COAL_2;
    public static final SlimefunItemStack CORRUPTED_DIAMOND_2;
@@ -178,6 +181,9 @@ public final class SPCItems {
    public static final SlimefunItemStack CORRUPTED_ENDERITE_INGOT_2;
    public static final SlimefunItemStack CORRUPTED_ELITE_INGOT_2;
     public static final SlimefunItemStack CORRUPTED_REACTOR_COOLANT_CELL_2;
+    public static final SlimefunItemStack CORRUPTED_NATURE_ARTIFACT_2;
+    public static final SlimefunItemStack CORRUPTED_TECH_ARTIFACT_2;
+    public static final SlimefunItemStack CORRUPTED_ANCIENT_ARTIFACT_2;
 
    public static final SlimefunItemStack CORRUPTED_ROTTEN_FLESH;
    public static final SlimefunItemStack CORRUPTED_BONE;
@@ -572,6 +578,13 @@ public final class SPCItems {
     public static final SlimefunItemStack DUST_EXTRACTOR;
     public static final SlimefunItemStack URANIUM_EXTRACTOR;
 
+    public static final SlimefunItemStack ELITE_ARTIFACT;
+    public static final SlimefunItemStack FUSION_ARTIFACT;
+    public static final SlimefunItemStack ARTIFACT_REACTOR;
+
+    public static final SlimefunItemStack VOID_ALTAR;
+    public static final SlimefunItemStack VOID_ALTAR_2;
+
 
    static {
 	  spcaddon_category = new NestedItemGroup(new NamespacedKey(SPCAddon.getInstance(), "spc_smp_category"), new CustomItemStack(PlayerHead.getItemStack(PlayerSkin.fromHashCode("fdd2cce04674c2c3d5a3a94ff219787a2b459de790a0c01ff29b96729072cd")), "&bSPC SMP Addon", new String[0]));
@@ -845,6 +858,21 @@ public final class SPCItems {
        CORRUPTED_REACTOR_COOLANT_CELL_2 = new SlimefunItemStack("CORRUPTED_REACTOR_COOLANT_CELL_2", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjU0OGRjNzUwZWNiMTQ2ZTVjM2E0YmI4OTBjYzYzY2UyYzhkZDI5YjcyNDJhYmE4ZjgxZjdmMWJhNjhlNGY2YyJ9fX0=", "&5Corrupted &bReactor Coolant Cell &7- &eII", "", "&c&oFeel the corruption");
        setupEnchanted(CORRUPTED_REACTOR_COOLANT_CELL_2);
 
+       CORRUPTED_NATURE_ARTIFACT = new SlimefunItemStack("CORRUPTED_NATURE_ARTIFACT", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzM4YjBiMGYxZjM1YzU2YjdkNjRlMGUyYjk2NjE4MDFmOTEyZjMxOGZhOWM4YzFkODNlOTE3ZGI0ZjJlNjUyMSJ9fX0=", "&5Corrupted &aNature Artifact &7- &eI", "", "&c&oFeel the corruption", "&1&oLost in time");
+       setupEnchanted(CORRUPTED_NATURE_ARTIFACT);
+       CORRUPTED_NATURE_ARTIFACT_2 = new SlimefunItemStack("CORRUPTED_NATURE_ARTIFACT_2", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzM4YjBiMGYxZjM1YzU2YjdkNjRlMGUyYjk2NjE4MDFmOTEyZjMxOGZhOWM4YzFkODNlOTE3ZGI0ZjJlNjUyMSJ9fX0=", "&5Corrupted &aNature Artifact &7- &eII", "", "&c&oFeel the corruption", "&1&oLost in time");
+       setupEnchanted(CORRUPTED_NATURE_ARTIFACT_2);
+
+       CORRUPTED_TECH_ARTIFACT = new SlimefunItemStack("CORRUPTED_TECH_ARTIFACT", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGQ0MmJiMzM5MWIzOTY0ZGUyNjZkOWJlYmU3Y2NmN2VmM2MzOTA2MjZlYjdhODQ1NjEyYWQ5MGYzZmE0MmMxMiJ9fX0=", "&5Corrupted &bTech Artifact &7- &eI", "", "&c&oFeel the corruption", "&1&oLost in time");
+       setupEnchanted(CORRUPTED_TECH_ARTIFACT);
+       CORRUPTED_TECH_ARTIFACT_2 = new SlimefunItemStack("CORRUPTED_TECH_ARTIFACT_2", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGQ0MmJiMzM5MWIzOTY0ZGUyNjZkOWJlYmU3Y2NmN2VmM2MzOTA2MjZlYjdhODQ1NjEyYWQ5MGYzZmE0MmMxMiJ9fX0=", "&5Corrupted &bTech Artifact &7- &eII", "", "&c&oFeel the corruption", "&1&oLost in time");
+       setupEnchanted(CORRUPTED_TECH_ARTIFACT_2);
+
+       CORRUPTED_ANCIENT_ARTIFACT = new SlimefunItemStack("CORRUPTED_ANCIENT_ARTIFACT", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2EzNmIzZmIyMzhlOWYyY2Y4MmU5YmExYzMwMzRiOTY5ZmY5NWQzOGQ4ZDE1MTY4ZDQzZDQ2NjQ1MzE2NCJ9fX0=", "&5Corrupted &eAncient Artifact &7- &eI", "", "&c&oFeel the corruption", "&1&oLost in time");
+       setupEnchanted(CORRUPTED_ANCIENT_ARTIFACT);
+       CORRUPTED_ANCIENT_ARTIFACT_2 = new SlimefunItemStack("CORRUPTED_ANCIENT_ARTIFACT_2", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2EzNmIzZmIyMzhlOWYyY2Y4MmU5YmExYzMwMzRiOTY5ZmY5NWQzOGQ4ZDE1MTY4ZDQzZDQ2NjQ1MzE2NCJ9fX0=", "&5Corrupted &eAncient Artifact &7- &eII", "", "&c&oFeel the corruption", "&1&oLost in time");
+       setupEnchanted(CORRUPTED_ANCIENT_ARTIFACT_2);
+
 
        // Logic: Repeat this block for each log type (Oak, Birch, Spruce, Jungle, Acacia, Dark Oak, Crimson, Warped)
        CORRUPTED_OAK_LOG = new SlimefunItemStack("CORRUPTED_OAK_LOG", Material.OAK_LOG, "&5Corrupted &fOak Log &7- &eI", "", "&c&oFeel the corruption");
@@ -894,22 +922,22 @@ public final class SPCItems {
       PROFESSIONAL_CIRCUIT_BOARD = new SlimefunItemStack("PROFESSIONAL_CIRCUIT_BOARD", Material.DETECTOR_RAIL, "&bProfessional Circuit Board", new String[0]);
 
       NETHER_ALTAR = new SlimefunItemStack("NETHER_ALTAR", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTdhOWE5ZjlhMWJkNjZhZGM3MDA2MDM4NWE3NzBjYjg2YmM3NjIxZGQ0MmI3NDMyZmNmNTMyNmViMGQzOGUzNSJ9fX0="
-    		  , "&6Nether Altar", new String[]{"", "&fMembuat nether star dari nether orb", "", LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE), LoreBuilder.speed(1.0F), LoreBuilder.powerBuffer(48000), LoreBuilder.powerPerSecond(1600)});
+    		  , "&6Nether Altar", new String[]{"", "&fMembuat nether star dari nether orb", "", LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE), LoreBuilder.speed(1.0F), LoreBuilder.powerBuffer(12000), LoreBuilder.powerPerSecond(1600)});
 
       NETHER_ALTAR_2 = new SlimefunItemStack("NETHER_ALTAR_2", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTdhOWE5ZjlhMWJkNjZhZGM3MDA2MDM4NWE3NzBjYjg2YmM3NjIxZGQ0MmI3NDMyZmNmNTMyNmViMGQzOGUzNSJ9fX0="
-    		  , "&6Nether Altar &7- &eII", new String[]{"", "&fMembuat nether star dari nether orb", "", LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE), LoreBuilder.speed(3.0F), LoreBuilder.powerBuffer(128000), LoreBuilder.powerPerSecond(1600)});
+    		  , "&6Nether Altar &7- &eII", new String[]{"", "&fMembuat nether star dari nether orb", "", LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE), LoreBuilder.speed(3.0F), LoreBuilder.powerBuffer(32000), LoreBuilder.powerPerSecond(1600)});
 
       ENDER_ALTAR = new SlimefunItemStack("ENDER_ALTAR", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2Y5NjMyNjI0YjAxYzFhNWMyYTcxYThkMDJiYTFhMjYwYjljOWRmMzk2M2I4MmMzYzQwNzA1OGJiZDBjMGU4MiJ9fX0="
-    		  , "&5Ender Altar", new String[]{"", "&fMembuat ender dragon scale dari ender orb", "", LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE), LoreBuilder.speed(1.0F), LoreBuilder.powerBuffer(48000), LoreBuilder.powerPerSecond(1600)});
+    		  , "&5Ender Altar", new String[]{"", "&fMembuat ender dragon scale dari ender orb", "", LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE), LoreBuilder.speed(1.0F), LoreBuilder.powerBuffer(12000), LoreBuilder.powerPerSecond(1600)});
 
       ENDER_ALTAR_2 = new SlimefunItemStack("ENDER_ALTAR_2", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2Y5NjMyNjI0YjAxYzFhNWMyYTcxYThkMDJiYTFhMjYwYjljOWRmMzk2M2I4MmMzYzQwNzA1OGJiZDBjMGU4MiJ9fX0="
-    		  , "&5Ender Altar &7- &eII", new String[]{"", "&fMembuat ender dragon scale dari ender orb", "", LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE), LoreBuilder.speed(3.0F), LoreBuilder.powerBuffer(128000), LoreBuilder.powerPerSecond(1600)});
+    		  , "&5Ender Altar &7- &eII", new String[]{"", "&fMembuat ender dragon scale dari ender orb", "", LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE), LoreBuilder.speed(3.0F), LoreBuilder.powerBuffer(32000), LoreBuilder.powerPerSecond(1600)});
 
       IRON_ALTAR = new SlimefunItemStack("IRON_ALTAR", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2RiMDIyNjA1NGVhZTA5YWNjZWU1ZTAyMjU2ODcyZTU1YjYyNTkzZGNjZGNkOTQwZGQxYWUzNzkyNDUwZTMyOCJ9fX0="
-    		  , "&fIron Altar", new String[]{"", "&fMembuat basic circuit board dari iron orb", "", LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE), LoreBuilder.speed(1.0F), LoreBuilder.powerBuffer(24000), LoreBuilder.powerPerSecond(800)});
+    		  , "&fIron Altar", new String[]{"", "&fMembuat basic circuit board dari iron orb", "", LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE), LoreBuilder.speed(1.0F), LoreBuilder.powerBuffer(6000), LoreBuilder.powerPerSecond(800)});
 
       IRON_ALTAR_2 = new SlimefunItemStack("IRON_ALTAR_2", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2RiMDIyNjA1NGVhZTA5YWNjZWU1ZTAyMjU2ODcyZTU1YjYyNTkzZGNjZGNkOTQwZGQxYWUzNzkyNDUwZTMyOCJ9fX0="
-    		  , "&fIron Altar &7- &eII", new String[]{"", "&fMembuat basic circuit board dari iron orb", "", LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE), LoreBuilder.speed(6.0F), LoreBuilder.powerBuffer(64000), LoreBuilder.powerPerSecond(800)});
+    		  , "&fIron Altar &7- &eII", new String[]{"", "&fMembuat basic circuit board dari iron orb", "", LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE), LoreBuilder.speed(6.0F), LoreBuilder.powerBuffer(16000), LoreBuilder.powerPerSecond(800)});
 
       CIRNO = new SlimefunItemStack("CIRNO", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWJmMzk2ODllYzI2MzA0YzRlYTk5ZGFjMWE1NjEyZDE3NWViMDJjZjhiYThjODI1OGM1ZmY5MzYxZDUzOGJhYiJ9fX0="
     		  , "&bCirno, the ice fairy", "", "&aMachine Skin: &fFreezer", "", LoreBuilder.machine(MachineTier.ADVANCED, MachineType.MACHINE), LoreBuilder.speed(1), LoreBuilder.powerBuffer(256), LoreBuilder.powerPerSecond(18));
@@ -1671,7 +1699,7 @@ public final class SPCItems {
                , "&bOre Polisher", new String[]{"", "&fMengubah deepslate ore menjadi ore biasa", "", LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE), LoreBuilder.speed(1.0F), LoreBuilder.powerPerSecond(64)});
 
        TURTLE_SCUTE_PRINTER = new SlimefunItemStack("TURTLE_SCUTE_PRINTER", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWQxYmQwNmE2NzM4ZDBkYTUwNTNlYWU0OWExMzYyYjg5NDg5ZDFhYzAwNGMyMjI1MDQ1MzZmN2JjZDA3Njc5ZCJ9fX0="
-               , "&aScute Printer", new String[]{"", "&fMengubah seagrass menjadi scute", "", LoreBuilder.machine(MachineTier.ADVANCED, MachineType.MACHINE), LoreBuilder.speed(1.0F), LoreBuilder.powerPerSecond(40)});
+               , "&aScute Printer", new String[]{"", "&fMengubah seagrass menjadi scute", "", LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE), LoreBuilder.speed(1.0F), LoreBuilder.powerPerSecond(240)});
 
        EGG_PRINTER = new SlimefunItemStack("EGG_PRINTER", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzc3NzA3MzE3NzE0M2Y5NDc2ODQ0YTc4ZTJlZGFiZmIzYTg2ZjNmZTMxYWIxYzBmODhiZTdiM2Y3NjljYjk1ZSJ9fX0="
                , "&aEgg Printer", new String[]{"", "&fMengubah seeds menjadi egg", "", LoreBuilder.machine(MachineTier.ADVANCED, MachineType.MACHINE), LoreBuilder.speed(1.0F), LoreBuilder.powerPerSecond(32)});
@@ -1682,7 +1710,8 @@ public final class SPCItems {
        MILK_STERILIZER = new SlimefunItemStack("MILK_STERILIZER", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTc1YjU4NmQyOWFhNGY2MzAwNjcwN2ZiZTk0YTMzYzg5YzIyNWY0OWIzYjQ0Y2IxODE3Mzg2NTZjOTQyZTI3NyJ9fX0="
                , "&fMilk Sterilizer", new String[]{"", "&fMerebus susu menjadi fresh milk", "", LoreBuilder.machine(MachineTier.ADVANCED, MachineType.MACHINE), LoreBuilder.speed(1.0F), LoreBuilder.powerPerSecond(40)});
 
-       COMPACT_REACTOR = new SlimefunItemStack("COMPACT_REACTOR", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTdlMTVkZTBkNGI1ZTIwZTZjNmQwMmMwNjQ2NWU4ZDg3ZTJiMGFiYjdmNGVkNThmYzZhNGJiNDllMDA4NmY1YyJ9fX0=", "&2Compact Reactor", new String[]{"", "&7&oNuklir tanpa khawatir meledak", "", LoreBuilder.machine(MachineTier.END_GAME, MachineType.GENERATOR), LoreBuilder.powerBuffer(16384), LoreBuilder.powerPerSecond(500)});
+       COMPACT_REACTOR = new SlimefunItemStack("COMPACT_REACTOR", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTdlMTVkZTBkNGI1ZTIwZTZjNmQwMmMwNjQ2NWU4ZDg3ZTJiMGFiYjdmNGVkNThmYzZhNGJiNDllMDA4NmY1YyJ9fX0=",
+               "&2Compact Reactor", new String[]{"", "&7&oNuklir tanpa khawatir meledak", "", LoreBuilder.machine(MachineTier.END_GAME, MachineType.GENERATOR), LoreBuilder.powerBuffer(16384), LoreBuilder.powerPerSecond(500)});
 
        ICE_KING_COOLANT_CELL = new SlimefunItemStack("ICE_KING_COOLANT_CELL", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODJkYTY4YmJjOWJkNGNjYmM2ZGFjMzlkZmRlNWRiNWIwYmNhODM1ODIyNGI0ZGYzZmJmMGZiNmYzN2JmNzQ5OSJ9fX0=", "&6Ice King Coolant Cell", new String[]{"", "&b&oBrrrrrr"});
 
@@ -1691,6 +1720,21 @@ public final class SPCItems {
 
        URANIUM_EXTRACTOR = new SlimefunItemStack("SPC_URANIUM_EXTRACTOR", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWIzMDg2OTRjNWIwMWU4MTVkNDk4NTM1ZjRjM2RiNTgyN2I0Y2M0NWYxMmEzMzcxN2FkMGNhOWZlMjQ1MDljMCJ9fX0="
                , "&2Uranium Extractor", new String[]{"", "&fMengubah cobblestone menjadi uranium", "", LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE), LoreBuilder.speed(1.0F), LoreBuilder.powerPerSecond(180)});
+
+       ELITE_ARTIFACT = new SlimefunItemStack("ELITE_ARTIFACT", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzQ4N2ZiYTI2ODVlZGEwMjJkYmM2YjQwMTU4YjU4NDY4YWQwMTQwMzU2ZjY2MTc1ZWYwYWRkZTIzZmM4MTVjMyJ9fX0=",
+               "&eElite Artifact", new String[]{"", "&1&oLost in time"});
+
+       FUSION_ARTIFACT = new SlimefunItemStack("FUSION_ARTIFACT", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTZlOTc3YWUyZjc5NmRjZTZjODBjYjZiZWQ5Mjk0ZTllZDRiMTFiODhmOWZkZTZjMzFmNDM1ZGZkMDM4MjUyOSJ9fX0=",
+               "&dFusion Artifact", new String[]{"", "&1&oLost in time"});
+
+       ARTIFACT_REACTOR = new SlimefunItemStack("ARTIFACT_REACTOR", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWY0NWZjY2EyMjZiOGZjM2RiM2ZlMDYzYTg2OTg4NzU5YTFjYzA3MWQ1ZDkzNjg3MTAwZmQzNzY5NWYwYzRmYyJ9fX0=",
+               "&4Artifact Reactor", new String[]{"", "&1&oLost in time", "", LoreBuilder.machine(MachineTier.END_GAME, MachineType.GENERATOR), LoreBuilder.powerBuffer(65536), LoreBuilder.powerPerSecond(2048)});
+
+       VOID_ALTAR = new SlimefunItemStack("VOID_ALTAR", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWViMTY3OTkzNjZiNTVlYjViMzRlM2U2NmMyOWZmMzc3ODNlNGM5NWMxYmNkNDUwZTQ1YzFiMGM2ODgxNDI3OCJ9fX0="
+               , "&5Void Altar", new String[]{"", "&fTidak perlu melawan ender king lagi", "", LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE), LoreBuilder.speed(1.0F), LoreBuilder.powerBuffer(36000), LoreBuilder.powerPerSecond(6000)});
+
+       VOID_ALTAR_2 = new SlimefunItemStack("VOID_ALTAR_2", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWViMTY3OTkzNjZiNTVlYjViMzRlM2U2NmMyOWZmMzc3ODNlNGM5NWMxYmNkNDUwZTQ1YzFiMGM2ODgxNDI3OCJ9fX0="
+               , "&5Void Altar &7- &eII", new String[]{"", "&fTidak perlu melawan ender king lagi", "", LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE), LoreBuilder.speed(3.0F), LoreBuilder.powerBuffer(96000), LoreBuilder.powerPerSecond(6000)});
 
    }
 

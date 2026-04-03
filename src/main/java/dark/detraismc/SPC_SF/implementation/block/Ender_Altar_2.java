@@ -41,7 +41,7 @@ public class Ender_Altar_2 extends AContainer implements RecipeDisplayItem {
 
 	    @Override
 	    public int getCapacity() {
-	        return 128000;
+	        return 32000;
 	    }
 
 	    @Override

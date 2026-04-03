@@ -42,7 +42,7 @@ public class Nether_Altar extends AContainer implements RecipeDisplayItem {
 
 	    @Override
 	    public int getCapacity() {
-	        return 48000;
+	        return 12000;
 	    }
 
 	    @Override
