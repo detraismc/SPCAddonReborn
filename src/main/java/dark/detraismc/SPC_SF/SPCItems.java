@@ -170,6 +170,14 @@ public final class SPCItems {
     public static final SlimefunItemStack CORRUPTED_TECH_ARTIFACT;
     public static final SlimefunItemStack CORRUPTED_ANCIENT_ARTIFACT;
 
+    public static final SlimefunItemStack CORRUPTED_COPPER_INGOT;
+    public static final SlimefunItemStack CORRUPTED_TIN_INGOT;
+    public static final SlimefunItemStack CORRUPTED_SILVER_INGOT;
+    public static final SlimefunItemStack CORRUPTED_LEAD_INGOT;
+    public static final SlimefunItemStack CORRUPTED_ALUMINUM_INGOT;
+    public static final SlimefunItemStack CORRUPTED_ZINC_INGOT;
+    public static final SlimefunItemStack CORRUPTED_MAGNESIUM_INGOT;
+
    public static final SlimefunItemStack CORRUPTED_COAL_2;
    public static final SlimefunItemStack CORRUPTED_DIAMOND_2;
    public static final SlimefunItemStack CORRUPTED_EMERALD_2;
@@ -184,6 +192,14 @@ public final class SPCItems {
     public static final SlimefunItemStack CORRUPTED_NATURE_ARTIFACT_2;
     public static final SlimefunItemStack CORRUPTED_TECH_ARTIFACT_2;
     public static final SlimefunItemStack CORRUPTED_ANCIENT_ARTIFACT_2;
+
+    public static final SlimefunItemStack CORRUPTED_COPPER_INGOT_2;
+    public static final SlimefunItemStack CORRUPTED_TIN_INGOT_2;
+    public static final SlimefunItemStack CORRUPTED_SILVER_INGOT_2;
+    public static final SlimefunItemStack CORRUPTED_LEAD_INGOT_2;
+    public static final SlimefunItemStack CORRUPTED_ALUMINUM_INGOT_2;
+    public static final SlimefunItemStack CORRUPTED_ZINC_INGOT_2;
+    public static final SlimefunItemStack CORRUPTED_MAGNESIUM_INGOT_2;
 
    public static final SlimefunItemStack CORRUPTED_ROTTEN_FLESH;
    public static final SlimefunItemStack CORRUPTED_BONE;
@@ -585,6 +601,9 @@ public final class SPCItems {
     public static final SlimefunItemStack VOID_ALTAR;
     public static final SlimefunItemStack VOID_ALTAR_2;
 
+    public static final SlimefunItemStack RADIOACTIVE_ACCELERATOR;
+    public static final SlimefunItemStack ENDSTONE_GENERATOR;
+
 
    static {
 	  spcaddon_category = new NestedItemGroup(new NamespacedKey(SPCAddon.getInstance(), "spc_smp_category"), new CustomItemStack(PlayerHead.getItemStack(PlayerSkin.fromHashCode("fdd2cce04674c2c3d5a3a94ff219787a2b459de790a0c01ff29b96729072cd")), "&bSPC SMP Addon", new String[0]));
@@ -872,6 +891,41 @@ public final class SPCItems {
        setupEnchanted(CORRUPTED_ANCIENT_ARTIFACT);
        CORRUPTED_ANCIENT_ARTIFACT_2 = new SlimefunItemStack("CORRUPTED_ANCIENT_ARTIFACT_2", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2EzNmIzZmIyMzhlOWYyY2Y4MmU5YmExYzMwMzRiOTY5ZmY5NWQzOGQ4ZDE1MTY4ZDQzZDQ2NjQ1MzE2NCJ9fX0=", "&5Corrupted &eAncient Artifact &7- &eII", "", "&c&oFeel the corruption", "&1&oLost in time");
        setupEnchanted(CORRUPTED_ANCIENT_ARTIFACT_2);
+
+       CORRUPTED_COPPER_INGOT = new SlimefunItemStack("CORRUPTED_COPPER_INGOT", Material.BRICK, "&5Corrupted &6Copper Ingot &7- &eI", "", "&c&oFeel the corruption");
+       setupEnchanted(CORRUPTED_COPPER_INGOT);
+       CORRUPTED_COPPER_INGOT_2 = new SlimefunItemStack("CORRUPTED_COPPER_INGOT_2", Material.BRICK, "&5Corrupted &6Copper Ingot &7- &eII", "", "&c&oFeel the corruption");
+       setupEnchanted(CORRUPTED_COPPER_INGOT_2);
+
+       CORRUPTED_TIN_INGOT = new SlimefunItemStack("CORRUPTED_TIN_INGOT", Material.IRON_INGOT, "&5Corrupted &6Tin Ingot &7- &eI", "", "&c&oFeel the corruption");
+       setupEnchanted(CORRUPTED_TIN_INGOT);
+       CORRUPTED_TIN_INGOT_2 = new SlimefunItemStack("CORRUPTED_TIN_INGOT_2", Material.IRON_INGOT, "&5Corrupted &6Tin Ingot &7- &eII", "", "&c&oFeel the corruption");
+       setupEnchanted(CORRUPTED_TIN_INGOT_2);
+
+       CORRUPTED_SILVER_INGOT = new SlimefunItemStack("CORRUPTED_SILVER_INGOT", Material.IRON_INGOT, "&5Corrupted &6Silver Ingot &7- &eI", "", "&c&oFeel the corruption");
+       setupEnchanted(CORRUPTED_SILVER_INGOT);
+       CORRUPTED_SILVER_INGOT_2 = new SlimefunItemStack("CORRUPTED_SILVER_INGOT_2", Material.IRON_INGOT, "&5Corrupted &6Silver Ingot &7- &eII", "", "&c&oFeel the corruption");
+       setupEnchanted(CORRUPTED_SILVER_INGOT_2);
+
+       CORRUPTED_LEAD_INGOT = new SlimefunItemStack("CORRUPTED_LEAD_INGOT", Material.IRON_INGOT, "&5Corrupted &6Lead Ingot &7- &eI", "", "&c&oFeel the corruption");
+       setupEnchanted(CORRUPTED_LEAD_INGOT);
+       CORRUPTED_LEAD_INGOT_2 = new SlimefunItemStack("CORRUPTED_LEAD_INGOT_2", Material.IRON_INGOT, "&5Corrupted &6Lead Ingot &7- &eII", "", "&c&oFeel the corruption");
+       setupEnchanted(CORRUPTED_LEAD_INGOT_2);
+
+       CORRUPTED_ALUMINUM_INGOT = new SlimefunItemStack("CORRUPTED_ALUMINUM_INGOT", Material.IRON_INGOT, "&5Corrupted &6Aluminum Ingot &7- &eI", "", "&c&oFeel the corruption");
+       setupEnchanted(CORRUPTED_ALUMINUM_INGOT);
+       CORRUPTED_ALUMINUM_INGOT_2 = new SlimefunItemStack("CORRUPTED_ALUMINUM_INGOT_2", Material.IRON_INGOT, "&5Corrupted &6Aluminum Ingot &7- &eII", "", "&c&oFeel the corruption");
+       setupEnchanted(CORRUPTED_ALUMINUM_INGOT_2);
+
+       CORRUPTED_ZINC_INGOT = new SlimefunItemStack("CORRUPTED_ZINC_INGOT", Material.IRON_INGOT, "&5Corrupted &6Zinc Ingot &7- &eI", "", "&c&oFeel the corruption");
+       setupEnchanted(CORRUPTED_ZINC_INGOT);
+       CORRUPTED_ZINC_INGOT_2 = new SlimefunItemStack("CORRUPTED_ZINC_INGOT_2", Material.IRON_INGOT, "&5Corrupted &6Zinc Ingot &7- &eII", "", "&c&oFeel the corruption");
+       setupEnchanted(CORRUPTED_ZINC_INGOT_2);
+
+       CORRUPTED_MAGNESIUM_INGOT = new SlimefunItemStack("CORRUPTED_MAGNESIUM_INGOT", Material.IRON_INGOT, "&5Corrupted &6Magnesium Ingot &7- &eI", "", "&c&oFeel the corruption");
+       setupEnchanted(CORRUPTED_MAGNESIUM_INGOT);
+       CORRUPTED_MAGNESIUM_INGOT_2 = new SlimefunItemStack("CORRUPTED_MAGNESIUM_INGOT_2", Material.IRON_INGOT, "&5Corrupted &6Magnesium Ingot &7- &eII", "", "&c&oFeel the corruption");
+       setupEnchanted(CORRUPTED_MAGNESIUM_INGOT_2);
 
 
        // Logic: Repeat this block for each log type (Oak, Birch, Spruce, Jungle, Acacia, Dark Oak, Crimson, Warped)
@@ -1735,6 +1789,12 @@ public final class SPCItems {
 
        VOID_ALTAR_2 = new SlimefunItemStack("VOID_ALTAR_2", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWViMTY3OTkzNjZiNTVlYjViMzRlM2U2NmMyOWZmMzc3ODNlNGM5NWMxYmNkNDUwZTQ1YzFiMGM2ODgxNDI3OCJ9fX0="
                , "&5Void Altar &7- &eII", new String[]{"", "&fTidak perlu melawan ender king lagi", "", LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE), LoreBuilder.speed(3.0F), LoreBuilder.powerBuffer(96000), LoreBuilder.powerPerSecond(6000)});
+
+       RADIOACTIVE_ACCELERATOR = new SlimefunItemStack("RADIOACTIVE_ACCELERATOR", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWVkYTcxYmIyZmUyZDgxM2MzMmNlY2VjNzhhODFkY2I1YTY5YjA1YmNmOTcyNjJiN2NhMjhlYjZhZGMwNDE5MSJ9fX0="
+               , "&2Radioactive Accelerator", new String[]{"", "&fMengubah uranium menjadi plutonium", "", LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE), LoreBuilder.speed(1.0F), LoreBuilder.powerPerSecond(50)});
+
+       ENDSTONE_GENERATOR = new SlimefunItemStack("ENDSTONE_GENERATOR", Material.END_STONE_BRICKS
+               , "&eEndstone Generator", new String[]{"", "&fInfinite Endstone", "", LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE), LoreBuilder.powerBuffer(5120), LoreBuilder.powerPerSecond(80)});
 
    }
 

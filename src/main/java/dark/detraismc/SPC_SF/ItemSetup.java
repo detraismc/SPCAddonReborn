@@ -295,6 +295,21 @@ final class ItemSetup {
           (new Corrupted_Tech_Artifact_2()).register(SPCAddon.getInstance());
           (new Corrupted_Ancient_Artifact()).register(SPCAddon.getInstance());
           (new Corrupted_Ancient_Artifact_2()).register(SPCAddon.getInstance());
+
+          (new Corrupted_Copper_Ingot()).register(SPCAddon.getInstance());
+          (new Corrupted_Copper_Ingot_2()).register(SPCAddon.getInstance());
+          (new Corrupted_Tin_Ingot()).register(SPCAddon.getInstance());
+          (new Corrupted_Tin_Ingot_2()).register(SPCAddon.getInstance());
+          (new Corrupted_Silver_Ingot()).register(SPCAddon.getInstance());
+          (new Corrupted_Silver_Ingot_2()).register(SPCAddon.getInstance());
+          (new Corrupted_Lead_Ingot()).register(SPCAddon.getInstance());
+          (new Corrupted_Lead_Ingot_2()).register(SPCAddon.getInstance());
+          (new Corrupted_Aluminum_Ingot()).register(SPCAddon.getInstance());
+          (new Corrupted_Aluminum_Ingot_2()).register(SPCAddon.getInstance());
+          (new Corrupted_Zinc_Ingot()).register(SPCAddon.getInstance());
+          (new Corrupted_Zinc_Ingot_2()).register(SPCAddon.getInstance());
+          (new Corrupted_Magnesium_Ingot()).register(SPCAddon.getInstance());
+          (new Corrupted_Magnesium_Ingot_2()).register(SPCAddon.getInstance());
          
          (new Corrupted_Oak_Log()).register(SPCAddon.getInstance());
          (new Corrupted_Oak_Log_2()).register(SPCAddon.getInstance());
@@ -669,6 +684,9 @@ final class ItemSetup {
 
           (new Fusion_Artifact()).register(SPCAddon.getInstance());
           (new Elite_Artifact()).register(SPCAddon.getInstance());
+
+          (new Radioactive_Accelerator()).setProcessingSpeed(1).register(SPCAddon.getInstance());
+          (new Endstone_Generator()).register(SPCAddon.getInstance());
          
       }
    }

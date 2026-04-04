@@ -128,6 +128,48 @@ public class Uncorrupted_Table_2 extends AContainer implements RecipeDisplayItem
            recipeList.add(SPCItems.CORRUPTED_ANCIENT_ARTIFACT);
            recipeList.add(new SlimefunItemStack(SPCItems.CORRUPTED_ANCIENT_ARTIFACT, 64));
            recipeList.add(SPCItems.CORRUPTED_ANCIENT_ARTIFACT_2);
+
+           // Copper
+           recipeList.add(new SlimefunItemStack(SlimefunItems.COPPER_INGOT, 64));
+           recipeList.add(SPCItems.CORRUPTED_COPPER_INGOT);
+           recipeList.add(new SlimefunItemStack(SPCItems.CORRUPTED_COPPER_INGOT, 64));
+           recipeList.add(SPCItems.CORRUPTED_COPPER_INGOT_2);
+
+           // Tin
+           recipeList.add(new SlimefunItemStack(SlimefunItems.TIN_INGOT, 64));
+           recipeList.add(SPCItems.CORRUPTED_TIN_INGOT);
+           recipeList.add(new SlimefunItemStack(SPCItems.CORRUPTED_TIN_INGOT, 64));
+           recipeList.add(SPCItems.CORRUPTED_TIN_INGOT_2);
+
+           // Zinc
+           recipeList.add(new SlimefunItemStack(SlimefunItems.ZINC_INGOT, 64));
+           recipeList.add(SPCItems.CORRUPTED_ZINC_INGOT);
+           recipeList.add(new SlimefunItemStack(SPCItems.CORRUPTED_ZINC_INGOT, 64));
+           recipeList.add(SPCItems.CORRUPTED_ZINC_INGOT_2);
+
+           // Lead
+           recipeList.add(new SlimefunItemStack(SlimefunItems.LEAD_INGOT, 64));
+           recipeList.add(SPCItems.CORRUPTED_LEAD_INGOT);
+           recipeList.add(new SlimefunItemStack(SPCItems.CORRUPTED_LEAD_INGOT, 64));
+           recipeList.add(SPCItems.CORRUPTED_LEAD_INGOT_2);
+
+           // Aluminum
+           recipeList.add(new SlimefunItemStack(SlimefunItems.ALUMINUM_INGOT, 64));
+           recipeList.add(SPCItems.CORRUPTED_ALUMINUM_INGOT);
+           recipeList.add(new SlimefunItemStack(SPCItems.CORRUPTED_ALUMINUM_INGOT, 64));
+           recipeList.add(SPCItems.CORRUPTED_ALUMINUM_INGOT_2);
+
+           // Magnesium
+           recipeList.add(new SlimefunItemStack(SlimefunItems.MAGNESIUM_INGOT, 64));
+           recipeList.add(SPCItems.CORRUPTED_MAGNESIUM_INGOT);
+           recipeList.add(new SlimefunItemStack(SPCItems.CORRUPTED_MAGNESIUM_INGOT, 64));
+           recipeList.add(SPCItems.CORRUPTED_MAGNESIUM_INGOT_2);
+
+           // Silver
+           recipeList.add(new SlimefunItemStack(SlimefunItems.SILVER_INGOT, 64));
+           recipeList.add(SPCItems.CORRUPTED_SILVER_INGOT);
+           recipeList.add(new SlimefunItemStack(SPCItems.CORRUPTED_SILVER_INGOT, 64));
+           recipeList.add(SPCItems.CORRUPTED_SILVER_INGOT_2);
 	        
 	        recipeList.add(new ItemStack(Material.NETHER_STAR, 64));
 	        recipeList.add(SPCItems.CORRUPTED_NETHER_STAR);
