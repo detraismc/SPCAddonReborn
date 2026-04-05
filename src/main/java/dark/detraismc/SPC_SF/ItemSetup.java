@@ -671,6 +671,10 @@ final class ItemSetup {
 
           (new Milk_Sterilizer()).setProcessingSpeed(1).register(SPCAddon.getInstance());
 
+          (new Cobbled_Deepslate_Generator()).register(SPCAddon.getInstance());
+          (new Basalt_Generator()).register(SPCAddon.getInstance());
+          (new Blackstone_Generator()).register(SPCAddon.getInstance());
+
           (new Ice_King_Coolant_Cell()).register(SPCAddon.getInstance());
           (new Compact_Reactor()).register(SPCAddon.getInstance());
 
@@ -687,6 +691,8 @@ final class ItemSetup {
 
           (new Radioactive_Accelerator()).setProcessingSpeed(1).register(SPCAddon.getInstance());
           (new Endstone_Generator()).register(SPCAddon.getInstance());
+
+          (new Artifact_Extractor()).setProcessingSpeed(1).register(SPCAddon.getInstance());
          
       }
    }

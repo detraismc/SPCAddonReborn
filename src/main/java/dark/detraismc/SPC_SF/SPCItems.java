@@ -588,6 +588,10 @@ public final class SPCItems {
     public static final SlimefunItemStack EGG_PRINTER_2;
     public static final SlimefunItemStack MILK_STERILIZER;
 
+    public static final SlimefunItemStack COBBLED_DEEPSLATE_GENERATOR;
+    public static final SlimefunItemStack BASALT_GENERATOR;
+    public static final SlimefunItemStack BLACKSTONE_GENERATOR;
+
     public static final SlimefunItemStack COMPACT_REACTOR;
     public static final SlimefunItemStack ICE_KING_COOLANT_CELL;
 
@@ -603,6 +607,9 @@ public final class SPCItems {
 
     public static final SlimefunItemStack RADIOACTIVE_ACCELERATOR;
     public static final SlimefunItemStack ENDSTONE_GENERATOR;
+
+    public static final SlimefunItemStack ARTIFACT_EXTRACTOR;
+
 
 
    static {
@@ -1764,6 +1771,17 @@ public final class SPCItems {
        MILK_STERILIZER = new SlimefunItemStack("MILK_STERILIZER", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTc1YjU4NmQyOWFhNGY2MzAwNjcwN2ZiZTk0YTMzYzg5YzIyNWY0OWIzYjQ0Y2IxODE3Mzg2NTZjOTQyZTI3NyJ9fX0="
                , "&fMilk Sterilizer", new String[]{"", "&fMerebus susu menjadi fresh milk", "", LoreBuilder.machine(MachineTier.ADVANCED, MachineType.MACHINE), LoreBuilder.speed(1.0F), LoreBuilder.powerPerSecond(40)});
 
+
+       COBBLED_DEEPSLATE_GENERATOR = new SlimefunItemStack("COBBLED_DEEPSLATE_GENERATOR", Material.CHISELED_DEEPSLATE
+               , "&cCobbled Deepslate Generator", new String[]{"", "&fInfinite Deepslate", "", LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE), LoreBuilder.powerBuffer(256), LoreBuilder.powerPerSecond(36)});
+
+       BASALT_GENERATOR = new SlimefunItemStack("BASALT_GENERATOR", Material.SMOOTH_BASALT
+               , "&cBasalt Generator", new String[]{"", "&fInfinite Basalt", "", LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE), LoreBuilder.powerBuffer(256), LoreBuilder.powerPerSecond(36)});
+
+       BLACKSTONE_GENERATOR = new SlimefunItemStack("BLACKSTONE_GENERATOR", Material.CHISELED_POLISHED_BLACKSTONE
+               , "&cBlackstone Generator", new String[]{"", "&fInfinite Blackstone", "", LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE), LoreBuilder.powerBuffer(256), LoreBuilder.powerPerSecond(36)});
+
+
        COMPACT_REACTOR = new SlimefunItemStack("COMPACT_REACTOR", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTdlMTVkZTBkNGI1ZTIwZTZjNmQwMmMwNjQ2NWU4ZDg3ZTJiMGFiYjdmNGVkNThmYzZhNGJiNDllMDA4NmY1YyJ9fX0=",
                "&2Compact Reactor", new String[]{"", "&7&oNuklir tanpa khawatir meledak", "", LoreBuilder.machine(MachineTier.END_GAME, MachineType.GENERATOR), LoreBuilder.powerBuffer(16384), LoreBuilder.powerPerSecond(500)});
 
@@ -1795,6 +1813,9 @@ public final class SPCItems {
 
        ENDSTONE_GENERATOR = new SlimefunItemStack("ENDSTONE_GENERATOR", Material.END_STONE_BRICKS
                , "&eEndstone Generator", new String[]{"", "&fInfinite Endstone", "", LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE), LoreBuilder.powerBuffer(5120), LoreBuilder.powerPerSecond(80)});
+
+       ARTIFACT_EXTRACTOR = new SlimefunItemStack("ARTIFACT_EXTRACTOR", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjdjZGI0ZDQ3ZjA5NDZmYzU3NDFjMzRlNGRhYjlmZGM3YmFjM2U5MWI2MGMyYzQ3NGRjZmFhNTM3YTEzMmVkZSJ9fX0="
+               , "&cArtifact Extractor", new String[]{"", "&fExtract artifact dari end stone", "", LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE), LoreBuilder.speed(1.0F), LoreBuilder.powerBuffer(80000), LoreBuilder.powerPerSecond(4000)});
 
    }
 
